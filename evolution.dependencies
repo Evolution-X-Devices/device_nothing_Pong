@@ -1,0 +1,10 @@
+[
+  {
+    "repository"  : "kernel_nothing_sm8475",
+    "target_path" : "kernel/nothing/sm8475"
+  },
+  {
+    "repository"  : "vendor_nothing_Pong",
+    "target_path" : "vendor/nothing/Pong"
+  }
+]
