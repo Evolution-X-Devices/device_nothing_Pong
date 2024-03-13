@@ -509,3 +509,6 @@ subsystem mem_buf_vm
 
 # Battery
 /sys/class/qcom-battery                                 charging_en                     0660    system  system
+
+#power_state device node
+/dev/power_state           0660   system      system
