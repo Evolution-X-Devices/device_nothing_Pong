@@ -117,7 +117,8 @@ PRODUCT_COPY_FILES += \
 
 # Charging
 PRODUCT_PACKAGES += \
-    nt-charging-control
+    nt-charging-control \
+    nt-charging-control_recovery
 
 # Configstore
 PRODUCT_PACKAGES += \
