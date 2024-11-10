@@ -10,14 +10,7 @@ soong_namespace {
         "hardware/lineage/interfaces/power-libperfmgr",
         "hardware/qcom-caf/bootctrl",
         "hardware/qcom-caf/common/libqti-perfd-client",
-        "vendor/qcom/opensource/commonsys-intf/display",
     ],
-}
-
-cc_library_shared {
-    name: "vendor.qti.hardware.display.config-V2-ndk_platform",
-    shared_libs: ["vendor.qti.hardware.display.config-V2-ndk"],
-    vendor_available: true,
 }
 
 install_symlink {
