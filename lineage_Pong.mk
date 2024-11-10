@@ -20,16 +20,14 @@ PRODUCT_MANUFACTURER := nothing
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A065
 
-PRODUCT_SYSTEM_NAME := Pong
-PRODUCT_SYSTEM_DEVICE := Pong
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="Pong-user 12 SKQ1.230722.001 2408281751 release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := Nothing/Pong/Pong:12/SKQ1.230722.001/2408281751:user/release-keys
+    BuildDesc="Pong-user 12 SKQ1.230722.001 2408281751 release-keys" \
+    BuildFingerprint=Nothing/Pong/Pong:12/SKQ1.230722.001/2408281751:user/release-keys \
+    DeviceName=Pong \
+    DeviceProduct=A065 \
+    SystemDevice=Pong \
+    SystemName=Pong
