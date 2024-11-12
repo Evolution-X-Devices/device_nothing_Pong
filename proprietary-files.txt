@@ -1466,7 +1466,7 @@ vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# RIL
+# RIL - from NOS A15 DP2
 product/app/uimgbaservice/uimgbaservice.apk
 product/etc/permissions/UimGba.xml
 product/etc/permissions/UimGbaManager.xml
@@ -1534,7 +1534,7 @@ vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcrilDataModule.so
-vendor/lib64/libqcrilNr.so
+vendor/lib64/libqcrilNr.so|37701e24970f1b7338d9d4c215f00fbfffb60b6d
 vendor/lib64/libqcrilNrCellInfoModule.so
 vendor/lib64/libqcrilNrFramework.so
 vendor/lib64/libqcrilNrImsModule.so
