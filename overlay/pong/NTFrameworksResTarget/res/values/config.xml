@@ -137,10 +137,6 @@
     <!-- Auto-brightness sensor type string -->
     <string name="config_displayLightSensorType">"android.sensor.light"</string>
 
-    <!-- If true, the doze component is not started until after the screen has been
-         turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportScreenOffUdfps">true</bool>
 
