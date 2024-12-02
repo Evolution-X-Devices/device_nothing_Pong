@@ -413,9 +413,6 @@ int LedVibratorDevice::setAmplitude(float amplitude) {
     int ret = 0;
     int gain = 0;
 
-    if (amplitude <= 0)
-        return 0;
-
     mLevel = amplitude * 3;
 
     if (mTimeoutMs < 20) {
@@ -443,8 +440,8 @@ int LedVibratorDevice::setAmplitude(float amplitude) {
         ret |= write_value(LED_DEVICE "/brightness", "1");
     } else {
         ret |= write_value(LED_DEVICE "/index", "4");
-        ret |= write_value(LED_DEVICE "/vmax", "9408");
-        ret |= write_value(LED_DEVICE "/gain", "0x7e");
+        ret |= write_value(LED_DEVICE "/vmax", "8400");
+        ret |= write_value(LED_DEVICE "/gain", "0x80");
         ret |= write_value(LED_DEVICE "/brightness", "1");
     }
 
@@ -466,8 +463,6 @@ ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
 
     *_aidl_return |= IVibrator::CAP_AMPLITUDE_CONTROL;
 
-    if (ff.mSupportGain)
-        *_aidl_return |= IVibrator::CAP_AMPLITUDE_CONTROL;
     if (ff.mSupportEffects)
         *_aidl_return |= IVibrator::CAP_PERFORM_CALLBACK;
     if (ff.mSupportExternalControl)
@@ -763,4 +758,3 @@ ndk::ScopedAStatus Vibrator::composePwle(const std::vector<PrimitivePwle> &compo
 }  // namespace hardware
 }  // namespace android
 }  // namespace aidl
-
