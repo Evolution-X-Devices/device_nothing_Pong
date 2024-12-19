@@ -339,79 +339,79 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigPlusClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 200,
       "Value": "1283400"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 200,
       "Value": "1555200"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 200,
       "Value": "1324800"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "UclampTAMin",
-      "Duration": 0,
-      "Value": "30"
+      "Duration": 200,
+      "Value": "50"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "UclampTALatency",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBWHystLength",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBWHistMemory",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBWMinFreq",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "1555000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWHystTriggerCount",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWHystLength",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWHistMemory",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "0"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWMinFreq",
-      "Duration": 0,
+      "Duration": 200,
       "Value": "600000"
     },
     {
