@@ -18,6 +18,7 @@
       "Values": [
         "9999999",
         "1555200",
+        "1324800",
         "1132800",
         "691200"
       ],
@@ -334,6 +335,24 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "862000000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigPlusClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1283400"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1555200"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 3000,
+      "Value": "1324800"
     },
     {
       "PowerHint": "INTERACTION",
