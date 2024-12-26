@@ -64,7 +64,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
-    libtinycompress \
     libvisualizer \
     libvolumelistener \
     vendor.qti.hardware.AGMIPC@1.0-service \
@@ -251,7 +250,6 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation-v33
 
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
     libpalclient
 
 # msm_irqbalance
