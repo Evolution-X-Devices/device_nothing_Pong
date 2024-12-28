@@ -463,3 +463,41 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
+
+#lei.wang add for ALK-297
+#example as: cat proc/hwid = "version = EVB gp87_val_up=1  gp88_val_up=1  gp87_val_down=0  gp88_val_down=0"
+#persist.vendor.fastrpc.hwid_version = EVB@{
+if [ -f /proc/hwid ]; then
+    originhwid=`cat /proc/hwid`
+    hwid=`echo ${originhwid:10:3}`
+    case "$hwid" in
+                       "EVB")       setprop persist.vendor.fastrpc.hwid_version EVB
+                                    ;;
+                       "T0")
+                                    setprop persist.vendor.fastrpc.hwid_version T0
+                                    ;;
+                       "EVT")
+                                    setprop persist.vendor.fastrpc.hwid_version EVT
+                                    ;;
+                       "DVT")
+                                    setprop persist.vendor.fastrpc.hwid_version DVT
+                                    ;;
+                       "PVT")
+                                    setprop persist.vendor.fastrpc.hwid_version PVT
+                                    ;;
+    esac
+fi
+#@}
+
+#xu.liyuan add for ALK-1254 to setprop efuse
+if [ -f /proc/secure_state ]; then
+    efuse=`cat /proc/secure_state`
+    case "$efuse" in
+                       "0")
+                                    setprop vendor.fastrpc.efuse.state 0
+                                    ;;
+                       "1")
+                                    setprop vendor.fastrpc.efuse.state 1
+                                    ;;
+    esac
+fi
