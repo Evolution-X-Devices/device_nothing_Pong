@@ -5,6 +5,43 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!--
+    Controls the mapping between RSSI and RSSI levels.
+
+    RSSI                                    RSSI Level
+    (-infinity, thresholds[0])                       0
+    [threshold[0], threshold[1])                     1
+    [threshold[1], threshold[2])                     2
+    ...                                            ...
+    [threshold[len-2], threshold[len-1])         len-1
+    [threshold[len-1], +infinity)                  len
+
+    where:
+        [a, b) is the range of integers `n` such that a <= n < b
+        `threshold[i]` represents the i'th element of the config_wifiRssiLevelThresholds array
+        and `len` is the length of the config_wifiRssiLevelThresholds array.
+    -->
+    <integer-array name="config_wifiRssiLevelThresholds">
+        <item>-93</item>
+        <item>-82</item>
+        <item>-71</item>
+        <item>-65</item>
+    </integer-array>
+
+    <!-- Boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool name="config_wifi6ghzSupport">false</bool>
+
+    <!-- Whether to allow Settings or SUW to create insecure Enterprise networks where server
+         certificate is not validated, by not specifying a Root CA certificate and/or server domain
+         name. It is STRONGLY RECOMMENDED to be set to false -->
+    <bool name="config_wifiAllowInsecureEnterpriseConfigurationsForSettingsAndSUW">true</bool>
+
+    <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
+    <bool name="config_wifiSaeUpgradeOffloadEnabled">false</bool>
+
+    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
+    <bool name="config_wifiSoftap6ghzSupported">false</bool>
+
     <!-- Do not translate. Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Nothing Phone (2)</string>
 
