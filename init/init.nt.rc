@@ -31,6 +31,10 @@ on boot
     chown system system /sys/class/leds/vibrator/duration
     chown system system /sys/class/leds/vibrator/state
 
+on post-fs-data
+    # Enable WLAN SSR
+    write /sys/kernel/cnss/recovery 1
+
 on property:sys.boot_completed=1
     chown system system /sys/class/qcom-battery/wireless_boost_en
     chown system system /sys/class/qcom-battery/wls_reverse_status
@@ -41,20 +45,17 @@ on property:sys.boot_completed=1
     
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
-    
+
+    # zRam
+    swapon_all /vendor/etc/fstab.zram
+ 
 on property:vendor.post_boot.parsed=1
     # Kill WALT CPU input boost
     write /proc/sys/walt/input_boost/input_boost_freq "0 0 0 0 0 0 0"
     write /proc/sys/walt/input_boost/input_boost_ms 0
+    
     # IRQ Tuning
     # IRQ 243: msm_drm
     # IRQ 240: kgsl_3d0_irq
     write /proc/irq/243/smp_affinity_list 2
     write /proc/irq/240/smp_affinity_list 1
-
-on post-fs-data
-    # Enable WLAN SSR
-    write /sys/kernel/cnss/recovery 1
-
-on property:sys.boot_completed=1
-    swapon_all /vendor/etc/fstab.zram
