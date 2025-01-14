@@ -249,6 +249,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libstagefright_foundation-v33
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_PACKAGES += \
     libpalclient
 
