@@ -53,7 +53,7 @@ mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 qcom.hw.aac.encoder=true
 ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=16695295
+vendor.mm.enable.qcom_parser=16777215
 
 # Netmgr
 persist.data.df.agg.dl_pkt=10
