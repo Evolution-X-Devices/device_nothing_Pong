@@ -108,6 +108,8 @@
          success). -->
     <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
 
+    <integer name="config_wifiDisableReasonByWrongPasswordThreshold">2</integer>
+
     <!-- Integer threshold for max number of WifiConfigurations that can be saved on the device.
         A value of -1 indicates no limit. If a max number is specified, then under-used configs
         will be deleted to make room for new configs.-->
@@ -125,5 +127,9 @@
     <string-array translatable="false" name="config_wifiCharsetsForSsidTranslation">
         <item>zh,GBK</item>
     </string-array>
+
+    <!-- Configure wifi tcp buffersizes in the form:
+                 rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,524288,1048576,4194304</string>
 
 </resources>

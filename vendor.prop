@@ -212,8 +212,8 @@ debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
 
 # NTF
-ro.vendor.nothing.feature.base=0x428124a040124b4247b97ffL
-ro.vendor.nothing.feature.diff.device.Pong=0x80004a404803d9842000L
+ro.vendor.nothing.feature.base=0x4458438124a040126b4247b97ffL
+ro.vendor.nothing.feature.diff.device.Pong=0x8a0044a404803d1842000L
 
 # Radio
 persist.radio.multisim.config=dsds

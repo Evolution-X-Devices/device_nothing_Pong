@@ -313,8 +313,8 @@
     <!-- Type of the tap sensor. Empty if tap is not supported. -->
     <string name="config_dozeTapSensorType" translatable="false">org.lineageos.sensor.single_touch</string>
 
-     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Nothing/Pong/Pong:12/SKQ1.240903.001/2412070124:user/release-keys</string>
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Nothing/Pong/Pong:12/SKQ1.240903.001/2501131723:user/release-keys</string>
 
     <integer translatable="false" name="config_brightness_ramp_rate_slow">50</integer>
     
