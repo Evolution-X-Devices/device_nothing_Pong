@@ -320,7 +320,8 @@ PRODUCT_PACKAGES += \
     NTSettingsProviderResTarget \
     NTSettingsResTarget \
     NTSystemUIResTarget \
-    NTWifiResTarget
+    NTWifiResTarget \
+    EvolutionSettingsOverlay
 
 # NCM overlays
 PRODUCT_PACKAGES += \
