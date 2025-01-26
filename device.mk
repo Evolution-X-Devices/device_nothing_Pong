@@ -332,6 +332,9 @@ PRODUCT_PACKAGES += \
     WallpaperPicker2PixelRes \
     WallpaperPicker2Res
 
+# Evolution X Settings
+PRODUCT_PACKAGES += EvolutionSettingsOverlay
+
 # NCM overlays
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
