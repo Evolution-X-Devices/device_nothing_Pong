@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     audioadsprpcd \
-    libaudiopreprocessing \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
@@ -58,16 +57,11 @@ PRODUCT_PACKAGES += \
     libagmmixer \
     libagm_pcm_plugin \
     libbatterylistener \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
     libfmpal \
     libhfp_pal \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvisualizer \
     libvolumelistener \
     sound_trigger.primary.taro \
     vendor.qti.hardware.AGMIPC@1.0-service
