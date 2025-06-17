@@ -260,7 +260,8 @@ $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class
     Diag_Lib \
     AGM \
     AHAL \
-    CamX
+    CamX \
+    minksocket
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
