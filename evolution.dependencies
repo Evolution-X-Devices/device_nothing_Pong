@@ -1,0 +1,30 @@
+[
+    {
+        "repository": "kernel_nothing_sm8475",
+        "target_path": "kernel/nothing/sm8475",
+        "branch": "bka"
+    },
+    {
+        "repository": "vendor_nothing_Pong",
+        "target_path": "vendor/nothing/Pong",
+        "branch": "bka"
+    },
+    {
+        "repository": "Pong-Development/hardware_dolby",
+        "target_path": "hardware/dolby",
+        "remote": "github-non-los",
+        "branch": "sony"
+    },
+    {
+        "repository": "Pong-Development/packages_apps_GlyphAdapter",
+        "target_path": "packages/apps/GlyphAdapter",
+        "remote": "github-non-los",
+        "branch": "15"
+    },
+    {
+        "repository": "Pong-Development/packages_apps_ParanoidGlyph",
+        "target_path": "packages/apps/ParanoidGlyph",
+        "remote": "github-non-los",
+        "branch": "15"
+    }
+]

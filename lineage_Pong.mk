@@ -30,3 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=Pong \
     SystemDevice=Pong \
     SystemName=Pong
+
+# Evolution X flags
+EVO_BUILD_TYPE := Official
+TARGET_BOOT_ANIMATION_RES := 1080
