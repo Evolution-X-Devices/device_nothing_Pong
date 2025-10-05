@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
     lib_bt_bundle \
     libagm_compress_plugin \
     libagm_mixer_plugin \
-    libagmmixer \
     libagm_pcm_plugin \
     libbatterylistener \
     libfmpal \
