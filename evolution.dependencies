@@ -5,6 +5,18 @@
         "branch": "bka"
     },
     {
+        "repository": "LineageOS/android_kernel_nothing_sm8475-devicetrees",
+        "target_path": "kernel/nothing/sm8475-devicetrees",
+        "remote": "github",
+        "branch": "lineage-23.2"
+    },
+    {
+        "repository": "LineageOS/android_kernel_nothing_sm8475-modules",
+        "target_path": "kernel/nothing/sm8475-modules",
+        "remote": "github",
+        "branch": "lineage-23.2"
+    },
+    {
         "repository": "joshuah345/proprietary_vendor_nothing_Pong",
         "target_path": "vendor/nothing/Pong",
         "remote": "gitlab",
