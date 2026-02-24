@@ -20,7 +20,7 @@
         "repository": "joshuah345/proprietary_vendor_nothing_Pong",
         "target_path": "vendor/nothing/Pong",
         "remote": "gitlab",
-        "branch": "lineage-23.1"
+        "branch": "lineage-23.2"
     },
     {
         "repository": "NullDebris/hardware_dolby",
@@ -29,7 +29,7 @@
         "branch": "lunaris"
     },
     {
-        "repository": "Pong-Development/packages_apps_GlyphAdapter",
+        "repository": "NullDebris/packages_apps_GlyphAdapter",
         "target_path": "packages/apps/GlyphAdapter",
         "remote": "github-non-los",
         "branch": "15"
