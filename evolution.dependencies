@@ -38,6 +38,6 @@
         "repository": "NullDebris/packages_apps_ParanoidGlyph",
         "target_path": "packages/apps/ParanoidGlyph",
         "remote": "github-non-los",
-        "branch": "lineage-23.0"
+        "branch": "lineage-23.1"
     }
 ]
