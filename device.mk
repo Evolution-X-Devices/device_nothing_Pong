@@ -251,6 +251,12 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/qcom-battery/charging_en)
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay-service.sysfs
+
+$(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
+
 # Logging
  SPAMMY_LOG_TAGS := \
     Diag_Lib \
