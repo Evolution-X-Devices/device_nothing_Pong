@@ -66,6 +66,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/duck-rkp/compatibility_matrix.xml \
     $(DEVICE_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 
